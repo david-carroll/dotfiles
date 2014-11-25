@@ -1,6 +1,6 @@
 [user]
-	email = brendanjerwin@gmail.com
-	name = Brendan Erwin
+	email = stjohn3d@outlook.com
+	name = St. John Peaster
 [core]
 	autocrlf = input
 	editor = vim
@@ -11,8 +11,8 @@
 	diff = auto
 	ui = always
 [github]
-	user = brendanjerwin
-	token = 6d535824c6469e9d40265fc6104244a8
+	user = StJohn3D
+	token = 617ece73980e21adee3cffe1e297c0222195150a
 [alias]
 	unstage = reset HEAD --
 	addrm = "!addremove() { git add -u . ; git add . ; }; addremove"
@@ -44,8 +44,8 @@
 [mergetool "p4merge"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge -dw \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [pivotal]
-	api-token = 30813b0353eb2e73aa7e95246841fe98
-	full-name = Brendan Erwin
+	api-token = 9173ed35092e543f8b601b108f070142
+	full-name = St John Peaster
 	only-mine = true
 	append-name = true
 	interactive = 1
