@@ -3,7 +3,7 @@
 	name = St. John Peaster
 [core]
 	autocrlf = input
-	editor = vim
+	editor = sublime --wait
 	excludesfile = /Users/brendanjerwin/.gitignore_global
 [color]
 	status = auto
