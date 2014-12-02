@@ -64,7 +64,7 @@ export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 # export GOPATH=$HOME/Projects/go
 # export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 # export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
-export HOMEBREW_GITHUB_API_TOKEN=d25a19f2d54b8431a443f4f0c6516c1fa055ce22
+export HOMEBREW_GITHUB_API_TOKEN=6ca2d6ebb00fa7d3ba76a439497b2424175f900c
 
 export PATH=$PATH:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/lib/node_modules:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin
 export PATH=$PATH:$HOME/Projects/go/bin
@@ -81,8 +81,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 compinit
 
-PERL_MB_OPT="--install_base \"/Users/brendanjerwin/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/brendanjerwin/perl5"; export PERL_MM_OPT;
+PERL_MB_OPT="--install_base \"/Users/sjpeaster/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/sjpeaster/perl5"; export PERL_MM_OPT;
 
-PERL_MB_OPT="--install_base \"/Users/brendanjerwin/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/brendanjerwin/perl5"; export PERL_MM_OPT;
+PERL_MB_OPT="--install_base \"/Users/sjpeaster/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/sjpeaster/perl5"; export PERL_MM_OPT;
