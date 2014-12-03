@@ -4,7 +4,7 @@
 [core]
 	autocrlf = input
 	editor = sublime --wait
-	excludesfile = /Users/brendanjerwin/.gitignore_global
+	excludesfile = /Users/sjpeaster/.gitignore_global
 [color]
 	status = auto
 	branch = auto

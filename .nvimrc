@@ -254,7 +254,7 @@ let g:move_key_modifier = 'C'
 
 " ------ embear/vim-localvimrc
 let g:localvimrc_sandbox = 0
-let g:localvimrc_whitelist = '/Users/brendanjerwin/Projects/\(readytraining\|grc\)/.*'
+let g:localvimrc_whitelist = '/Users/sjpeaster/Projects/\(readytraining\|grc\)/.*'
 
 " ------ ssvermeulen/vim-easyclip
 let g:EasyClipAutoFormat = 1
