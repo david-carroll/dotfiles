@@ -60,19 +60,27 @@ alias s.="sublime ."
 alias ~="cd ~/"
 alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
-alias h="echo '+------------------------------------------------------------------+
-|  gup - git smart-pull     |  a-s   - cd ~/Projects/asset-server  |
-|  gl  - git smart-log      |  r-t   - cd ~/Projects/readytraining |
-|  gm  - git smart-merge    |  pr    - cd ~/Projects               |
-|  gs  - git status         |  s.    - sublime .                   |
-|  gss - git status --short |  ~     - cd ~/                       |
-|  gc  - git commit         |  prefs - sublime ~/.zshrc            |
-|  grh - git reset --hard   |  update- highlight -O ansi           |
-|  gfp - git fetch -p;      |  h     - This output                 |
-|         git pull;         |                                      |
-|          git smart-pull   |                                      |
-|            git status     |                                      |
-+------------------------------------------------------------------+'"
+alias h="echo '+-------------------------------------------------------------------+
+|      - git commands -     |             - short cuts -            |
+|  gup - git smart-pull     |  a-s    - cd ~/Projects/asset-server  |
+|  gl  - git smart-log      |  r-t    - cd ~/Projects/readytraining |
+|  gm  - git smart-merge    |  pr     - cd ~/Projects               |
+|  gs  - git status         |  s.     - sublime .                   |
+|  gss - git status --short |  ~      - cd ~/                       |
+|  gc  - git commit         |                                       |
+|  grh - git reset --hard   |                                       |
+|  gfp - git fetch -p;      |                                       |
+|         git pull;         |                                       |
+|          git smart-pull   |                                       |
+|            git status     |                                       |
++-------------------------------------------------------------------+
+|                        - Config Commands -                        |
+| h      - Shows this help window                                   |
+| prefs  - sublime ~/.zshrc                                         |
+| update - dfm add -A;                                              |
+|            dfm commit -m update;                                  |
+|              dfm push                                             |
++-------------------------------------------------------------------+'"
 
 alias tmux="TERM=screen-256color-bce tmux"
 unalias run-help
