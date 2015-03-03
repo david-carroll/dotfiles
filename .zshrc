@@ -59,7 +59,7 @@ alias pr="cd ~/Projects"
 alias s.="sublime ."
 alias ~="cd ~/"
 alias prefs="sublime ~/.zshrc"
-alias ccat='highlight -O ansi'
+alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias h="echo '+------------------------------------------------------------------+
 |  gup - git smart-pull     |  a-s   - cd ~/Projects/asset-server  |
 |  gl  - git smart-log      |  r-t   - cd ~/Projects/readytraining |
@@ -67,7 +67,7 @@ alias h="echo '+----------------------------------------------------------------
 |  gs  - git status         |  s.    - sublime .                   |
 |  gss - git status --short |  ~     - cd ~/                       |
 |  gc  - git commit         |  prefs - sublime ~/.zshrc            |
-|  grh - git reset --hard   |  ccat  - highlight -O ansi           |
+|  grh - git reset --hard   |  update- highlight -O ansi           |
 |  gfp - git fetch -p;      |  h     - This output                 |
 |         git pull;         |                                      |
 |          git smart-pull   |                                      |
@@ -94,6 +94,7 @@ export PATH=$PATH:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/lib/
 export PATH=$PATH:$HOME/Projects/go/bin
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:.
+#export ASSET_CLIENT_DATABASE_URI=http://129.123.123.123:7474
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
