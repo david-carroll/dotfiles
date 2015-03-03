@@ -37,6 +37,8 @@ source $ZSH/oh-my-zsh.sh
 # export PROMPT="%(0?.%{%{%}%}.%{%{%}%})%{%{%}%}%30<..<${vcs_info_msg_0_%%.}%<<%(!.❯❯❯.❯)%{%{%}%}%{%{%}%}"
 setopt CSH_NULL_GLOB
 
+# source ~/.git-completion.zsh
+
 eval `ssh-agent -s`
 # Example aliases
 alias zshrc="$EDITOR ~/.zshrc"
@@ -46,9 +48,31 @@ eval "$(hub alias -s)"
 alias gup='git smart-pull'
 alias gl='git smart-log'
 alias gm='git smart-merge'
-alias gs='git status --short'
+alias gs='git status'
+alias gss='git status --short'
+alias gc='git commit'
 alias grh='git reset --hard'
+alias gfp="git fetch -p; git pull; git smart-pull; git status"
+alias a-s="cd ~/Projects/asset-server"
+alias r-t="cd ~/Projects/readytraining"
+alias pr="cd ~/Projects"
+alias s.="sublime ."
+alias ~="cd ~/"
+alias prefs="sublime ~/.zshrc"
 alias ccat='highlight -O ansi'
+alias h="echo '+------------------------------------------------------------------+
+|  gup - git smart-pull     |  a-s   - cd ~/Projects/asset-server  |
+|  gl  - git smart-log      |  r-t   - cd ~/Projects/readytraining |
+|  gm  - git smart-merge    |  pr    - cd ~/Projects               |
+|  gs  - git status         |  s.    - sublime .                   |
+|  gss - git status --short |  ~     - cd ~/                       |
+|  gc  - git commit         |  prefs - sublime ~/.zshrc            |
+|  grh - git reset --hard   |  ccat  - highlight -O ansi           |
+|  gfp - git fetch -p;      |  h     - This output                 |
+|         git pull;         |                                      |
+|          git smart-pull   |                                      |
+|            git status     |                                      |
++------------------------------------------------------------------+'"
 
 alias tmux="TERM=screen-256color-bce tmux"
 unalias run-help

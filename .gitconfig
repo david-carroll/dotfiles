@@ -5,6 +5,7 @@
 	autocrlf = input
 	editor = sublime --wait
 	excludesfile = /Users/sjpeaster/.gitignore_global
+	mergetool = p4merge
 [color]
 	status = auto
 	branch = auto
@@ -79,8 +80,12 @@
 [mergetool]
 	prompt = false
 [merge]
-	tool = Kaleidoscope
+	tool = p4merge
 [filter "media"]
+	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
 	required = true
