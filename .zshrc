@@ -62,6 +62,7 @@ alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias h="echo '+-------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -            |
++-------------------------------------------------------------------+
 |  gup - git smart-pull     |  a-s    - cd ~/Projects/asset-server  |
 |  gl  - git smart-log      |  r-t    - cd ~/Projects/readytraining |
 |  gm  - git smart-merge    |  pr     - cd ~/Projects               |
@@ -75,6 +76,7 @@ alias h="echo '+----------------------------------------------------------------
 |            git status     |                                       |
 +-------------------------------------------------------------------+
 |                        - Config Commands -                        |
++-------------------------------------------------------------------+
 | h      - Shows this help window                                   |
 | prefs  - sublime ~/.zshrc                                         |
 | update - dfm add -A;                                              |
