@@ -53,36 +53,44 @@ alias gss='git status --short'
 alias gc='git commit'
 alias grh='git reset --hard'
 alias gfp="git fetch -p; git pull; git smart-pull; git status"
+alias gb="git branch | cut -c 3- | pick"
 alias a-s="cd ~/Projects/asset-server"
 alias r-t="cd ~/Projects/readytraining"
 alias pr="cd ~/Projects"
 alias s.="sublime ."
 alias ~="cd ~/"
+alias back="cd"
+alias setBack='alias back="cd $(pwd)"'
+alias cd..='cd ..'
+alias +x="chmod +x build"
 alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
-alias h="echo '+-------------------------------------------------------------------+
-|      - git commands -     |             - short cuts -            |
-+-------------------------------------------------------------------+
-|  gup - git smart-pull     |  a-s    - cd ~/Projects/asset-server  |
-|  gl  - git smart-log      |  r-t    - cd ~/Projects/readytraining |
-|  gm  - git smart-merge    |  pr     - cd ~/Projects               |
-|  gs  - git status         |  s.     - sublime .                   |
-|  gss - git status --short |  ~      - cd ~/                       |
-|  gc  - git commit         |                                       |
-|  grh - git reset --hard   |                                       |
-|  gfp - git fetch -p;      |                                       |
-|         git pull;         |                                       |
-|          git smart-pull   |                                       |
-|            git status     |                                       |
-+-------------------------------------------------------------------+
-|                        - Config Commands -                        |
-+-------------------------------------------------------------------+
-| h      - Shows this help window                                   |
-| prefs  - sublime ~/.zshrc                                         |
-| update - dfm add -A;                                              |
-|            dfm commit -m update;                                  |
-|              dfm push                                             |
-+-------------------------------------------------------------------+'"
+alias refresh="source ~/.zshrc"
+alias h="echo '+--------------------------------------------------------------------+
+|      - git commands -     |             - short cuts -             |
++--------------------------------------------------------------------+
+|  gup - git smart-pull     |  a-s     - cd ~/Projects/asset-server  |
+|  gl  - git smart-log      |  r-t     - cd ~/Projects/readytraining |
+|  gm  - git smart-merge    |  pr      - cd ~/Projects               |
+|  gs  - git status         |  s.      - sublime .                   |
+|  gss - git status --short |  ~       - cd ~/                       |
+|  gc  - git commit         |  back    - cd to current BACK          |
+|  grh - git reset --hard   |  setBack - alias back to cd to pwd     |
+|  gfp - git fetch -p;      |  cd..    - cd ..                       |
+|         git pull;         |  +x      - chmod +x build              |
+|          git smart-pull   |                                        |
+|            git status     |                                        |
+|  gb  - List branches(pick)|                                        |
++--------------------------------------------------------------------+
+|                        - Config Commands -                         |
++--------------------------------------------------------------------+
+| h       - Shows this help window                                   |
+| prefs   - sublime ~/.zshrc                                         |
+| refresh - source ~/.zshrc                                          |
+| update  - dfm add -A;                                              |
+|            dfm commit -m update;                                   |
+|              dfm push                                              |
++--------------------------------------------------------------------+'"
 
 alias tmux="TERM=screen-256color-bce tmux"
 unalias run-help
@@ -104,7 +112,8 @@ export PATH=$PATH:/usr/local/heroku/bin:/usr/local/share/npm/bin:/usr/local/lib/
 export PATH=$PATH:$HOME/Projects/go/bin
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:.
-#export ASSET_CLIENT_DATABASE_URI=http://129.123.123.123:7474
+export ASSET_CLIENT_DATABASE_URI=http://192.168.59.103:7474
+export ASSET_CLIENT_STORAGE=~/Projects/assetsPileOfDisks
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
