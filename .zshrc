@@ -62,7 +62,7 @@ alias ~="cd ~/"
 alias back="cd"
 alias setBack='alias back="cd $(pwd)"'
 alias cd..='cd ..'
-alias +x="chmod +x build"
+alias cx="chmod +x build"
 alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias refresh="source ~/.zshrc"
@@ -77,7 +77,7 @@ alias h="echo '+----------------------------------------------------------------
 |  gc  - git commit         |  back    - cd to current BACK          |
 |  grh - git reset --hard   |  setBack - alias back to cd to pwd     |
 |  gfp - git fetch -p;      |  cd..    - cd ..                       |
-|         git pull;         |  +x      - chmod +x build              |
+|         git pull;         |  cx      - chmod +x build              |
 |          git smart-pull   |                                        |
 |            git status     |                                        |
 |  gb  - List branches(pick)|                                        |
