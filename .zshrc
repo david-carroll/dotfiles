@@ -39,6 +39,8 @@ setopt CSH_NULL_GLOB
 
 # source ~/.git-completion.zsh
 
+
+
 eval `ssh-agent -s`
 # Example aliases
 alias zshrc="$EDITOR ~/.zshrc"
@@ -56,6 +58,7 @@ alias gfp="git fetch -p; git pull; git smart-pull; git status"
 alias gb="git branch | cut -c 3- | pick"
 alias a-s="cd ~/Projects/asset-server"
 alias r-t="cd ~/Projects/readytraining"
+alias c-d="cd ~/Projects/creating-deftly"
 alias pr="cd ~/Projects"
 alias s.="sublime ."
 alias ~="cd ~/"
@@ -66,6 +69,7 @@ alias cx="chmod +x build"
 alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias refresh="source ~/.zshrc"
+alias rSH="killall Screenhero; sleep 2; open /opt/homebrew-cask/Caskroom/screenhero/latest/Screenhero.app"
 alias h="echo '+--------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -             |
 +--------------------------------------------------------------------+
@@ -78,7 +82,7 @@ alias h="echo '+----------------------------------------------------------------
 |  grh - git reset --hard   |  setBack - alias back to cd to pwd     |
 |  gfp - git fetch -p;      |  cd..    - cd ..                       |
 |         git pull;         |  cx      - chmod +x build              |
-|          git smart-pull   |                                        |
+|          git smart-pull   |  rSH     - kills & restarts SH         |
 |            git status     |                                        |
 |  gb  - List branches(pick)|                                        |
 +--------------------------------------------------------------------+
@@ -98,6 +102,7 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
 source ~/.profile
+source /usr/local/share/zsh/site-functions/_aws
 
 # Customize to your needs...
 export HAXE_STD_PATH="/usr/local/lib/haxe/std"
