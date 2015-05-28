@@ -100,6 +100,7 @@ alias h="echo '+----------------------------------------------------------------
 |            dfm commit -m update;                                   |
 |              dfm push                                              |
 +--------------------------------------------------------------------+'"
+alias help='h'
 
 alias tmux="TERM=screen-256color-bce tmux"
 unalias run-help
