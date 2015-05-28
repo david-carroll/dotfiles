@@ -70,6 +70,10 @@ alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias refresh="source ~/.zshrc"
 alias rSH="killall Screenhero; sleep 2; open /opt/homebrew-cask/Caskroom/screenhero/latest/Screenhero.app"
+alias notes="echo '+--------------------------------------------------------------------+
+| Push to a different branch:                                        |
+|   git push origin HEAD:<target-branch> -f                          |
++--------------------------------------------------------------------+'"
 alias h="echo '+--------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -             |
 +--------------------------------------------------------------------+
@@ -89,6 +93,7 @@ alias h="echo '+----------------------------------------------------------------
 |                        - Config Commands -                         |
 +--------------------------------------------------------------------+
 | h       - Shows this help window                                   |
+| notes   - Shows helpful notes                                      |
 | prefs   - sublime ~/.zshrc                                         |
 | refresh - source ~/.zshrc                                          |
 | update  - dfm add -A;                                              |
