@@ -75,7 +75,9 @@ alias notes="echo '+------------------------------------------------------------
 | Push to a different branch:                                        |
 |   git push origin HEAD:<target-branch> -f                          |
 | Testing the catalog, first:                                        |
-|   export ASSET_CATALOG_TEST_STORE="192.168.59.103:27017/catalog"     |
+|   export ASSET_CATALOG_TEST_STORE="192.168.59.103:27017/catalog"   |
+| Starting the server                                                |
+|   export ASSET_CATALOG_ENDPOINT=http://192.168.59.103:2880         |
 +--------------------------------------------------------------------+'"
 alias h="echo '+--------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -             |
