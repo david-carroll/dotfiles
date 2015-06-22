@@ -59,6 +59,7 @@ alias gb="git branch | cut -c 3- | pick"
 alias a-s="cd ~/Projects/asset-server"
 alias r-t="cd ~/Projects/readytraining"
 alias c-d="cd ~/Projects/creating-deftly"
+alias scripts="cd ~/Projects/_scripts"
 alias pr="cd ~/Projects"
 alias s.="sublime ."
 alias ~="cd ~/"
@@ -73,6 +74,8 @@ alias rSH="killall Screenhero; sleep 2; open /opt/homebrew-cask/Caskroom/screenh
 alias notes="echo '+--------------------------------------------------------------------+
 | Push to a different branch:                                        |
 |   git push origin HEAD:<target-branch> -f                          |
+| Testing the catalog, first:                                        |
+|   export ASSET_CATALOG_TEST_STORE="192.168.59.103:27017/catalog"   |
 +--------------------------------------------------------------------+'"
 alias h="echo '+--------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -             |
@@ -80,14 +83,14 @@ alias h="echo '+----------------------------------------------------------------
 |  gup - git smart-pull     |  a-s     - cd ~/Projects/asset-server  |
 |  gl  - git smart-log      |  r-t     - cd ~/Projects/readytraining |
 |  gm  - git smart-merge    |  pr      - cd ~/Projects               |
-|  gs  - git status         |  s.      - sublime .                   |
-|  gss - git status --short |  ~       - cd ~/                       |
-|  gc  - git commit         |  back    - cd to current BACK          |
-|  grh - git reset --hard   |  setBack - alias back to cd to pwd     |
-|  gfp - git fetch -p;      |  cd..    - cd ..                       |
-|         git pull;         |  cx      - chmod +x build              |
-|          git smart-pull   |  rSH     - kills & restarts SH         |
-|            git status     |                                        |
+|  gs  - git status         |  scripts - cd ~/Projects/_scripts      |
+|  gss - git status --short |  s.      - sublime .                   |
+|  gc  - git commit         |  ~       - cd ~/                       |
+|  grh - git reset --hard   |  back    - cd to current BACK          |
+|  gfp - git fetch -p;      |  setBack - alias back to cd to pwd     |
+|         git pull;         |  cd..    - cd ..                       |
+|          git smart-pull   |  cx      - chmod +x build              |
+|            git status     |  rSH     - kills & restarts SH         |
 |  gb  - List branches(pick)|                                        |
 +--------------------------------------------------------------------+
 |                        - Config Commands -                         |
