@@ -71,6 +71,11 @@ alias prefs="sublime ~/.zshrc"
 alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias refresh="source ~/.zshrc"
 alias rSH="killall Screenhero; sleep 2; open /opt/homebrew-cask/Caskroom/screenhero/latest/Screenhero.app"
+alias Qbuild="r-t; bundle exec rake flash:qbuild"
+alias RTbuild="r-t; cd build_course; bin/build_course --server http://localhost:2778 ~/Projects/Syncthing/Tech_Data_Course_Definition/TechData_comp_law_239_migrateXml --output-dir ../Build/Public --force --verbose; cd ..; bundle exec rake flash:qbuild; cd -"
+alias RTserver="~/Projects/readytraining; node fake_riptide_server.js"
+alias ASserver="scripts; startServer"
+alias 4commit="for a in *; asset commit \$a --author \"St. John\""
 alias notes="echo '+--------------------------------------------------------------------+
 | Push to a different branch:                                        |
 |   git push origin HEAD:<target-branch> -f                          |
@@ -91,7 +96,11 @@ alias h="echo '+----------------------------------------------------------------
 |         git pull;         |  cd..    - cd ..                       |
 |          git smart-pull   |  cx      - chmod +x build              |
 |            git status     |  rSH     - kills & restarts SH         |
-|  gb  - List branches(pick)|                                        |
+|  gb  - List branches(pick)|  Qbuild  - Does a R-t quick build      |
+|                           |  RTbuild - Does a full R-t build       |
+|                           |  RTserver- Starts the r-t server       |
+|                           |  ASserver- Starts the a-s server       |
+|                           |  4commit - Commits all assets in .     |
 +--------------------------------------------------------------------+
 |                        - Config Commands -                         |
 +--------------------------------------------------------------------+
