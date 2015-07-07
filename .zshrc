@@ -72,7 +72,7 @@ alias update="dfm add -A; dfm commit -m'update'; dfm push"
 alias refresh="source ~/.zshrc"
 alias rSH="killall Screenhero; sleep 2; open /opt/homebrew-cask/Caskroom/screenhero/latest/Screenhero.app"
 alias Qbuild="r-t; bundle exec rake flash:qbuild"
-alias DesktopBuild="r-t; cd build_course; bin/build_course --server http://localhost:2778 ~/Desktop/BUILD_COURSE_FOLDER --output-dir ../Build/Public --force --verbose; cd ..; bundle exec rake flash:qbuild; cd -"
+alias DesktopBuild="r-t; cd build_course; bin/build_course --server http://localhost:2778 ~/Desktop/BUILD_COURSE_FOLDER --output-dir ../Build/Public --force --verbose; cd ..;"
 alias RTbuild="r-t; cd build_course; bin/build_course --server http://localhost:2778 ~/Projects/Syncthing/Tech_Data_Course_Definition/TechData_comp_law_239_migrateXml --output-dir ../Build/Public --force --verbose; cd ..; bundle exec rake flash:qbuild; cd -"
 alias RTserver="~/Projects/readytraining; node fake_riptide_server.js"
 alias ASserver="scripts; startServer"
@@ -82,6 +82,9 @@ alias notes="echo '+------------------------------------------------------------
 |   git push origin HEAD:<target-branch> -f                          |
 | Testing the catalog, first:                                        |
 |   export ASSET_CATALOG_TEST_STORE=192.168.59.103:27017/catalog     |
+| Testing testing-deftly:                                            |
+|   mocha; mocha --require blanket -R html-cov > coverage.html;      |
+|   open coverage.html                                               |
 +--------------------------------------------------------------------+'"
 alias h="echo '+--------------------------------------------------------------------+
 |      - git commands -     |             - short cuts -             |
