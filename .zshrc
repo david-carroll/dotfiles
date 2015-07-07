@@ -54,7 +54,7 @@ alias gs='git status'
 alias gss='git status --short'
 alias gc='git commit'
 alias grh='git reset --hard'
-alias gfp="git fetch -p; git pull; git smart-pull; git status"
+alias gfp="git fetch -p; git smart-pull; git status"
 alias gb="git branch | cut -c 3- | pick"
 alias a-s="cd ~/Projects/asset-server"
 alias r-t="cd ~/Projects/readytraining"
@@ -97,10 +97,10 @@ alias h="echo '+----------------------------------------------------------------
 |  gc  - git commit         |  ~       - cd ~/                       |
 |  grh - git reset --hard   |  back    - cd to current BACK          |
 |  gfp - git fetch -p;      |  setBack - alias back to cd to pwd     |
-|         git pull;         |  cd..    - cd ..                       |
-|          git smart-pull   |  cx      - chmod +x build              |
-|            git status     |  rSH     - kills & restarts SH         |
-|  gb  - List branches(pick)|  Qbuild  - Does a R-t quick build      |
+|         git smart-pull    |  cd..    - cd ..                       |
+|          git status       |  cx      - chmod +x build              |
+|  gb  - List branches(pick)|  rSH     - kills & restarts SH         |
+|                           |  Qbuild  - Does a R-t quick build      |
 |                           |  RTbuild - Does a full R-t build       |
 |                           |  RTserver- Starts the r-t server       |
 |                           |  ASserver- Starts the a-s server       |
