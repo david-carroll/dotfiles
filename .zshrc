@@ -102,6 +102,7 @@ alias h="echo '+----------------------------------------------------------------
 |  gb  - List branches(pick)|  rSH     - kills & restarts SH         |
 |                           |  Qbuild  - Does a R-t quick build      |
 |                           |  RTbuild - Does a full R-t build       |
+|                           |  DesktopBuild - (BUILD_COURSE_FOLDER)  |
 |                           |  RTserver- Starts the r-t server       |
 |                           |  ASserver- Starts the a-s server       |
 |                           |  4commit - Commits all assets in .     |
