@@ -1,6 +1,6 @@
 [user]
-	email = stjohn3d@outlook.com
-	name = St. John Peaster
+	email = david.carroll@websocially.com
+	name = David Carroll
 [core]
 	autocrlf = input
 	editor = sublime --wait
@@ -12,8 +12,8 @@
 	diff = auto
 	ui = always
 [github]
-	user = StJohn3D
-	token = 617ece73980e21adee3cffe1e297c0222195150a
+	user = david-carroll
+	token = 66c33e58ce74076152c65fbf2f0d342215b3a569
 [alias]
 	unstage = reset HEAD --
 	addrm = "!addremove() { git add -u . ; git add . ; }; addremove"
@@ -45,8 +45,8 @@
 [mergetool "p4merge"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge -dw \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [pivotal]
-	api-token = 9173ed35092e543f8b601b108f070142
-	full-name = St John Peaster
+	api-token = 557de011a4c964e7d6d081ec37408f70
+	full-name = David Carroll
 	only-mine = true
 	append-name = true
 	interactive = 1

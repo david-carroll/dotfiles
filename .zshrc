@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bureau"
-DEFAULT_USER="stjohn3D"
+DEFAULT_USER="david-carroll"
 
 
 # Set to this to use case-sensitive completion
@@ -76,7 +76,7 @@ alias DesktopBuild="r-t; cd build_course; bin/build_course --server http://local
 alias RTbuild="r-t; cd build_course; bin/build_course --server http://localhost:2778 ~/Projects/Syncthing/Tech_Data_Course_Definition/TechData_comp_law_239_migrateXml --output-dir ../Build/Public --force --verbose; cd ..; bundle exec rake flash:qbuild; cd -"
 alias RTserver="~/Projects/readytraining; node fake_riptide_server.js"
 alias ASserver="scripts; startServer"
-alias 4commit="for a in *; asset commit \$a --author \"St. John\""
+alias 4commit="for a in *; asset commit \$a --author \"David Carroll\""
 alias notes="echo '+--------------------------------------------------------------------+
 | Push to a different branch:                                        |
 |   git push origin HEAD:<target-branch> -f                          |
