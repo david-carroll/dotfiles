@@ -83,7 +83,7 @@ alias notes="echo '+------------------------------------------------------------
 | Testing the catalog, first:                                        |
 |   export ASSET_CATALOG_TEST_STORE=192.168.59.103:27017/catalog     |
 | Testing testing-deftly:                                            |
-|   mocha; mocha --require blanket -R html-cov > coverage.html;      |
+|   npm test  or npm run debug                                       |
 |   open coverage.html                                               |
 +--------------------------------------------------------------------+'"
 alias h="echo '+--------------------------------------------------------------------+
