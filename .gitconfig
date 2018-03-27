@@ -4,7 +4,7 @@
 [core]
 	autocrlf = input
 	editor = sublime --wait
-	excludesfile = /Users/sjpeaster/.gitignore_global
+	excludesfile = /Users/davidcarroll/.gitignore_global
 	mergetool = p4merge
 [color]
 	status = auto
@@ -53,16 +53,16 @@
 	delete-branch = 1
 	verbose = 1
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
 [mergetool "fugitive"]
     cmd = mvim -f -c \"Gdiff\" \"$MERGED\"
 [difftool "mvim"]
     cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
 	trustExitCode = true
 [push]
 	default = simple
